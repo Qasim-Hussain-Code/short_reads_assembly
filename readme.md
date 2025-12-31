@@ -27,17 +27,17 @@ This project provides an end-to-end workflow for analyzing bacterial short-read 
 │     └── SPAdes                                                          │
 │                                                                         │
 │  5. ASSEMBLY QC                                                         │
-│     └── QUAST / CheckM2                                                  │
+│     └── QUAST / CheckM2                                                 │
 │                                                                         │
 │  6. GENOME ANNOTATION                                                   │
 │     └── Prokka / Bakta                                                  │
 │                                                                         │
 │  7. MOBILE GENETIC ELEMENTS                                             │
-│                               │
 │                                                                         │
-│  8. ANTIMICROBIAL RESISTANCE                                            │                          │
 │                                                                         │
-│  9. VIRULENCE FACTORS                                                   │                                     │
+│  8. ANTIMICROBIAL RESISTANCE                                            │                          
+│                                                                         │
+│  9. VIRULENCE FACTORS                                                   │                                     
 │                                                                         │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
