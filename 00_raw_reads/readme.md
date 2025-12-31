@@ -1,0 +1,2 @@
+# raw files are here
+The raw short reads files in .fastq.gz format are located in this directory. Please ensure to copy them to the appropriate location for further processing as outlined in the project workflow.

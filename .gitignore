@@ -1,0 +1,88 @@
+# =============================================================================
+# Bioinformatics Project .gitignore
+# Short Reads Assembly Pipeline
+# =============================================================================
+
+# Raw sequencing data (large files - store elsewhere or use Git LFS)
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.sam
+*.cram
+
+# Processed/trimmed reads
+*.trimmed.fastq.gz
+*.trimmed.fq.gz
+
+# Reference genomes and indices
+*.fasta
+*.fa
+*.fna
+*.idx
+*.bt2
+*.bwt
+*.pac
+*.ann
+*.amb
+*.sa
+
+# Assembly outputs
+*.contigs.fa
+*.scaffolds.fa
+
+# Temporary and intermediate files
+*.tmp
+*.temp
+*.log
+tmp/
+temp/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.egg-info/
+.eggs/
+*.egg
+
+# Conda environments (local)
+envs/
+.conda/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Snakemake
+.snakemake/
+
+# Nextflow
+.nextflow/
+.nextflow.log*
+work/
+results/
+
+# Keep directory structure but ignore contents for data directories
+00_raw_reads/*.fastq.gz
+00_raw_reads/*.fq.gz
+02_process_reads/*.fastq.gz
+02_process_reads/*.fq.gz
