@@ -114,13 +114,6 @@ bash analysis.sh
 | Prokka | 1.15.6 | Rapid genome annotation |
 | Bakta | 1.11.4 | Comprehensive genome annotation |
 
-## Results Summary
-
-For the sample dataset (codanics):
-- **BUSCO Score**: 98.3% complete (bacteria_odb12)
-- **Assembly**: 217 contigs, ~5.4 Mb total
-- **Annotated Features**: ~4,500 CDS, 80 tRNAs, 7 rRNAs
-
 ## Known Issues & Solutions
 
 | Issue | Solution |
