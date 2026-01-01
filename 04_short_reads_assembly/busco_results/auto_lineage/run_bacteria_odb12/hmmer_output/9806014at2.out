@@ -1,0 +1,14 @@
+#                                                                                                        --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                    accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                            ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+NODE_4_length_379350_cov_35.042700:21297-21950|- -            218 9806014              -            174   6.7e-70  232.3   4.6   1   1   1.8e-73   8.2e-70  232.0   4.6     4   173    20   188    17   189 0.98 NODE_4_length_379350_cov_35.042700_20 # 21297 # 21950 # -1 # ID=4_20;partial=00;start_type=TTG;rbs_motif=TAA;rbs_spacer=13bp;gc_cont=0.390
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/busco_downloads/lineages/bacteria_odb12/hmms/9806014at2.hmm
+# Target file:     /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/busco_results/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/busco_results/auto_lineage/run_bacteria_odb12/hmmer_output/9806014at2.out --cpu 1 /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/busco_downloads/lineages/bacteria_odb12/hmms/9806014at2.hmm /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/busco_results/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly
+# Date:            Thu Jan  1 15:32:52 2026
+# [ok]

@@ -1,0 +1,29 @@
+# BUSCO version is: 6.0.0 
+# The lineage dataset is: archaea_odb12 (Creation date: 2025-05-14, number of genomes: 157, number of BUSCOs: 195)
+# Summarized benchmarking in BUSCO notation for file /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/04_busco_assessment/contigs.fasta
+# BUSCO was run in mode: prok_genome_prod
+# Gene predictor used: prodigal
+
+	***** Results: *****
+
+	C:22.1%[S:21.0%,D:1.0%],F:3.1%,M:74.9%,n:195	   
+	43	Complete BUSCOs (C)			   
+	41	Complete and single-copy BUSCOs (S)	   
+	2	Complete and duplicated BUSCOs (D)	   
+	6	Fragmented BUSCOs (F)			   
+	146	Missing BUSCOs (M)			   
+	195	Total BUSCO groups searched		   
+
+Assembly Statistics:
+	217	Number of scaffolds
+	217	Number of contigs
+	5410520	Total length
+	0.000%	Percent gaps
+	282 kbp	Scaffold N50
+	282 kbp	Contigs N50
+
+
+Dependencies and versions:
+	hmmsearch: 3.4
+	bbtools: None
+	prodigal: 2.6.3

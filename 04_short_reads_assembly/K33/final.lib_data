@@ -1,0 +1,38 @@
+ú---
+max read length: 151
+nomerge max read length: 151
+average read length: 148.183
+average coverage: 63.203
+libraries:
+  - type:            paired-end
+    number:          1
+    orientation:     fr
+    left reads:
+      - '/home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/corrected/codanics_1.trimmed.fastq00.0_0.cor.fastq.gz'
+    right reads:
+      - '/home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/corrected/codanics_2.trimmed.fastq00.0_0.cor.fastq.gz'
+    single reads:
+      - '/home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/corrected/codanics__unpaired00.0_0.cor.fastq.gz'
+    data:
+      unmerged read length: 151
+      merged read length: 0
+      insert size mean: 0
+      insert size deviation: 0
+      insert size left quantile: 0
+      insert size right quantile: 0
+      insert size median: 0
+      insert size mad: 0
+      insert size distribution: {  }
+      pi threshold:    0
+      binary reads info:
+        binary converted: true
+        bin reads info file: '/home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/.bin_reads/INFO_0'
+        paired read prefix: '/home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/.bin_reads/paired_0'
+        merged read prefix: '/home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/.bin_reads/merged_0'
+        single read prefix: '/home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/.bin_reads/single_0'
+        chunk num:       4
+      single reads mapped: false
+      library index:   0
+      number of reads: 2943885
+      total nucleotides: 436232495
+...

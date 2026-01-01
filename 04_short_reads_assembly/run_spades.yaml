@@ -1,0 +1,240 @@
+- STAGE: Before start
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Before_start_9Z1ZBKM351BH23QOYTII36NQJ35ELYK7
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: before_start
+- STAGE: Read error correction
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Read_error_correction_T36Q1RLO3W26V5BR8JGXV22W2MSPBO0M
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: ec_start
+- STAGE: Read error correction
+  args:
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/corrected/configs/config.info
+  config_dir: corrected
+  del_after:
+  - tmp/hammer_83zpu3pd
+  job_uuid: SPAdes_Read_error_correction_WUZI6XGRV2D6QRKO2VZRW2PEIQCE5KR0
+  mpi_support: false
+  output_files:
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/corrected/corrected.yaml
+  path: /home/kpchuang/miniconda3/envs/03_spades_assembly/bin/spades-hammer
+  short_name: ec_runtool
+- STAGE: corrected reads compression
+  args:
+  - /home/kpchuang/miniconda3/envs/03_spades_assembly/share/spades/spades_pipeline/scripts/compress_all.py
+  - --input_file
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/corrected/corrected.yaml
+  - --ext_python_modules_home
+  - /home/kpchuang/miniconda3/envs/03_spades_assembly/share/spades
+  - --max_threads
+  - '4'
+  - --output_dir
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/corrected
+  - --gzip_output
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_corrected_reads_compression_GLTVLB6GNHKKGNRCL96Q6446PDX6JZCK
+  mpi_support: false
+  output_files: []
+  path: /home/kpchuang/miniconda3/envs/03_spades_assembly/bin/python3
+  short_name: ec_compress
+- STAGE: Read error correction
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Read_error_correction_0TDJOUSD3G5BK8JRIJQSXN6TSZS7HT3Y
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: ec_finish
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Assembling_7C7L2TV1F8GRCHHLHBUS9258MFJVJ6IO
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: as_start
+- STAGE: K21
+  args:
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/K21/configs/config.info
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/K21/configs/careful_mode.info
+  config_dir: K21
+  del_after: []
+  job_uuid: hpcSPAdes_K21_GEKQWH6V2QQO010PTFNL5QQGC1XXU2SQ
+  mpi_support: true
+  output_files: []
+  path: /home/kpchuang/miniconda3/envs/03_spades_assembly/bin/{spades_core}
+  short_name: k21
+- STAGE: K33
+  args:
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/K33/configs/config.info
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/K33/configs/careful_mode.info
+  config_dir: K33
+  del_after: []
+  job_uuid: hpcSPAdes_K33_C5YRXFTL2TU4HQOXFMPYOH69VY3K96ZU
+  mpi_support: true
+  output_files: []
+  path: /home/kpchuang/miniconda3/envs/03_spades_assembly/bin/{spades_core}
+  short_name: k33
+- STAGE: K55
+  args:
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/K55/configs/config.info
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/K55/configs/careful_mode.info
+  config_dir: K55
+  del_after: []
+  job_uuid: hpcSPAdes_K55_1F5R0YKUW1Z45LTITL9L909E1VHBQRPX
+  mpi_support: true
+  output_files: []
+  path: /home/kpchuang/miniconda3/envs/03_spades_assembly/bin/{spades_core}
+  short_name: k55
+- STAGE: K77
+  args:
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/K77/configs/config.info
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/K77/configs/careful_mode.info
+  config_dir: K77
+  del_after: []
+  job_uuid: hpcSPAdes_K77_CJLZ1GVOV7PBJE1VPA88UBZTFM0UW6TH
+  mpi_support: true
+  output_files: []
+  path: /home/kpchuang/miniconda3/envs/03_spades_assembly/bin/{spades_core}
+  short_name: k77
+- STAGE: Copy files
+  args:
+  - /home/kpchuang/miniconda3/envs/03_spades_assembly/share/spades/spades_pipeline/scripts/copy_files.py
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/K77/before_rr.fasta
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/before_rr.fasta
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/K77/assembly_graph_after_simplification.gfa
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/assembly_graph_after_simplification.gfa
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/K77/final_contigs.fasta
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/contigs.fasta
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/K77/first_pe_contigs.fasta
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/first_pe_contigs.fasta
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/K77/strain_graph.gfa
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/strain_graph.gfa
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/K77/scaffolds.fasta
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/scaffolds.fasta
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/K77/scaffolds.paths
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/scaffolds.paths
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/K77/assembly_graph_with_scaffolds.gfa
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/assembly_graph_with_scaffolds.gfa
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/K77/assembly_graph.fastg
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/assembly_graph.fastg
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/K77/final_contigs.paths
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/contigs.paths
+  config_dir: ''
+  del_after:
+  - .bin_reads
+  - tmp/spades_zrr0wipl
+  job_uuid: SPAdes_Copy_files_4SWKS2VRS3AMK78WB03GVXMOBL1Q2KRU
+  mpi_support: false
+  output_files: []
+  path: /home/kpchuang/miniconda3/envs/03_spades_assembly/bin/python3
+  short_name: copy_files
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Assembling_YETSYFV7ZEDTBF0GGJHZ1YM29G2EFJ5H
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: as_finish
+- STAGE: Mismatch correction
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Mismatch_correction_CVJ7TU0TMA6UH4IC25DO0OEX4AKZGS5I
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: mc_start
+- STAGE: Mismatch correction contigs
+  args:
+  - /home/kpchuang/miniconda3/envs/03_spades_assembly/share/spades/spades_pipeline/scripts/correction_iteration_script.py
+  - --corrected
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/contigs.fasta
+  - --assembled
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/misc/assembled_contigs.fasta
+  - --assembly_type
+  - contigs
+  - --output_dir
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly
+  - --bin_home
+  - /home/kpchuang/miniconda3/envs/03_spades_assembly/bin
+  config_dir: mismatch_corrector/contigs
+  del_after:
+  - mismatch_corrector/contigs/tmp
+  - tmp/corrector_4nn5kgyr
+  job_uuid: SPAdes_Mismatch_correction_contigs_K70S8SPPALLQTQGMTDF45HA2QUFMR4TZ
+  mpi_support: false
+  output_files: []
+  path: /home/kpchuang/miniconda3/envs/03_spades_assembly/bin/python3
+  short_name: mc_contigs
+- STAGE: Mismatch correction scaffolds
+  args:
+  - /home/kpchuang/miniconda3/envs/03_spades_assembly/share/spades/spades_pipeline/scripts/correction_iteration_script.py
+  - --corrected
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/scaffolds.fasta
+  - --assembled
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/misc/assembled_scaffolds.fasta
+  - --assembly_type
+  - scaffolds
+  - --output_dir
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly
+  - --bin_home
+  - /home/kpchuang/miniconda3/envs/03_spades_assembly/bin
+  config_dir: mismatch_corrector/scaffolds
+  del_after:
+  - mismatch_corrector/scaffolds/tmp
+  - tmp/corrector_qtz3po8k
+  job_uuid: SPAdes_Mismatch_correction_scaffolds_QZ27JU39C4VACIW2EAH9AA77YGLQKOX4
+  mpi_support: false
+  output_files: []
+  path: /home/kpchuang/miniconda3/envs/03_spades_assembly/bin/python3
+  short_name: mc_scaffolds
+- STAGE: Mismatch correction
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Mismatch_correction_R34LETGSJY7FSHJE4IQQJLJ7TP8TIK30
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: mc_finish
+- STAGE: Breaking scaffolds
+  args:
+  - /home/kpchuang/miniconda3/envs/03_spades_assembly/share/spades/spades_pipeline/scripts/breaking_scaffolds_script.py
+  - --result_scaffolds_filename
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/scaffolds.fasta
+  - --misc_dir
+  - /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/misc
+  - --threshold_for_breaking_scaffolds
+  - '3'
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Breaking_scaffolds_AWBMY0TO3LJMBVFG62P4ZS8AZUBYXJVV
+  mpi_support: false
+  output_files: []
+  path: /home/kpchuang/miniconda3/envs/03_spades_assembly/bin/python3
+  short_name: bs
+- STAGE: Terminate
+  args: []
+  config_dir: ''
+  del_after:
+  - configs
+  job_uuid: SPAdes_Terminate_LF80Y37NI0MCFTMJAV1P674W64P2Y99U
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: terminate

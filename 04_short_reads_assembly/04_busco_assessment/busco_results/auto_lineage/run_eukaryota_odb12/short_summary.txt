@@ -1,0 +1,31 @@
+# BUSCO version is: 6.0.0 
+# The lineage dataset is: eukaryota_odb12 (Creation date: 2025-07-01, number of genomes: 456, number of BUSCOs: 129)
+# Summarized benchmarking in BUSCO notation for file /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/04_busco_assessment/contigs.fasta
+# BUSCO was run in mode: euk_genome_min
+# Gene predictor used: miniprot
+
+	***** Results: *****
+
+	C:2.3%[S:2.3%,D:0.0%],F:0.8%,M:96.9%,n:129,E:66.7%	   
+	3	Complete BUSCOs (C)	(of which 2 contain internal stop codons)		   
+	3	Complete and single-copy BUSCOs (S)	   
+	0	Complete and duplicated BUSCOs (D)	   
+	1	Fragmented BUSCOs (F)			   
+	125	Missing BUSCOs (M)			   
+	129	Total BUSCO groups searched		   
+
+Assembly Statistics:
+	217	Number of scaffolds
+	217	Number of contigs
+	5410520	Total length
+	0.000%	Percent gaps
+	282 kbp	Scaffold N50
+	282 kbp	Contigs N50
+
+
+Dependencies and versions:
+	hmmsearch: 3.4
+	bbtools: None
+	prodigal: 2.6.3
+	miniprot_index: 0.18-r281
+	miniprot_align: 0.18-r281

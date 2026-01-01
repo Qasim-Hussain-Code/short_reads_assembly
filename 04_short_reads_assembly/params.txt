@@ -1,0 +1,38 @@
+Command line: /home/kpchuang/miniconda3/envs/03_spades_assembly/bin/spades.py	-1	/home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/02_process_reads/codanics_1.trimmed.fastq.gz	-2	/home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/02_process_reads/codanics_2.trimmed.fastq.gz	-o	/home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly	--careful	--threads	4	--memory	8	
+
+System information:
+  SPAdes version: 4.2.0
+  Python version: 3.14.2
+  OS: Linux-6.14.0-37-generic-x86_64-with-glibc2.39
+
+Output dir: /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly
+Mode: read error correction and assembling
+Debug mode is turned OFF
+
+Dataset parameters:
+  Standard mode
+  For multi-cell/isolate data we recommend to use '--isolate' option; for single-cell MDA data use '--sc'; for metagenomic data use '--meta'; for RNA-Seq use '--rna'.
+  Reads:
+    Library number: 1, library type: paired-end
+      orientation: fr
+      left reads: ['/home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/02_process_reads/codanics_1.trimmed.fastq.gz']
+      right reads: ['/home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/02_process_reads/codanics_2.trimmed.fastq.gz']
+      interlaced reads: not specified
+      single reads: not specified
+      merged reads: not specified
+Read error correction parameters:
+  Iterations: 1
+  PHRED offset will be auto-detected
+  Corrected reads will be compressed
+Assembly parameters:
+  k: automatic selection based on read length
+  Repeat resolution is enabled
+  Mismatch careful mode is turned ON
+  MismatchCorrector will be used
+  Coverage cutoff is turned OFF
+  Assembly graph output will use GFA v1.2 format
+Other parameters:
+  Dir for temp files: /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/tmp
+  Threads: 4
+  Memory limit (in Gb): 8
+

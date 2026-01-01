@@ -1,0 +1,7 @@
+"bwa": "/home/kpchuang/miniconda3/envs/03_spades_assembly/bin/spades-bwa"
+"dataset": "/home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/input_dataset.yaml"
+"log_filename": "log.properties"
+"max_nthreads": !!int "4"
+"output_dir": "/home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/mismatch_corrector/contigs"
+"strategy": "mapped_squared"
+"work_dir": "/home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/tmp/corrector_4nn5kgyr"

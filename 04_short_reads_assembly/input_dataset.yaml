@@ -1,0 +1,7 @@
+- "left reads":
+  - "/home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/02_process_reads/codanics_1.trimmed.fastq.gz"
+  "number": !!int "1"
+  "orientation": "fr"
+  "right reads":
+  - "/home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/02_process_reads/codanics_2.trimmed.fastq.gz"
+  "type": "paired-end"

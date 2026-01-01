@@ -1,0 +1,18 @@
+#                                                                                                          --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                      accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                              ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+NODE_22_length_72694_cov_38.560489:13349-14767|+   -            473 8479                 -            387  4.9e-127  421.9   0.8   1   2   4.4e-32   6.9e-29   98.8   0.0     3   121    22   146    20   156 0.92 NODE_22_length_72694_cov_38.560489_22 # 13349 # 14767 # 1 # ID=22_22;partial=00;start_type=ATG;rbs_motif=TAAA;rbs_spacer=12bp;gc_cont=0.488
+NODE_22_length_72694_cov_38.560489:13349-14767|+   -            473 8479                 -            387  4.9e-127  421.9   0.8   2   2    9e-100   1.4e-96  321.7   0.3   122   384   188   457   176   459 0.94 NODE_22_length_72694_cov_38.560489_22 # 13349 # 14767 # 1 # ID=22_22;partial=00;start_type=ATG;rbs_motif=TAAA;rbs_spacer=12bp;gc_cont=0.488
+NODE_2_length_424706_cov_34.285840:364289-365209|+ -            307 8479                 -            387   0.00012   19.0   0.4   1   2       0.2     3e+02   -2.1   0.1   254   282    57    87    36   108 0.59 NODE_2_length_424706_cov_34.285840_313 # 364289 # 365209 # 1 # ID=2_313;partial=00;start_type=ATG;rbs_motif=AACAA;rbs_spacer=5bp;gc_cont=0.455
+NODE_2_length_424706_cov_34.285840:364289-365209|+ -            307 8479                 -            387   0.00012   19.0   0.4   2   2   1.6e-07   0.00025   18.0   0.0   183   289   128   237   118   247 0.72 NODE_2_length_424706_cov_34.285840_313 # 364289 # 365209 # 1 # ID=2_313;partial=00;start_type=ATG;rbs_motif=AACAA;rbs_spacer=5bp;gc_cont=0.455
+NODE_19_length_79805_cov_35.801074:54470-55807|+   -            446 8479                 -            387   0.00057   16.8   0.6   1   1   6.2e-07   0.00096   16.0   0.6   179   215   220   256   211   260 0.90 NODE_19_length_79805_cov_35.801074_48 # 54470 # 55807 # 1 # ID=19_48;partial=00;start_type=ATG;rbs_motif=TAA;rbs_spacer=11bp;gc_cont=0.471
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/04_busco_assessment/busco_downloads/lineages/archaea_odb12/hmms/8479at2157.hmm
+# Target file:     /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/04_busco_assessment/busco_results/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/04_busco_assessment/busco_results/auto_lineage/run_archaea_odb12/hmmer_output/8479at2157.out --cpu 1 /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/04_busco_assessment/busco_downloads/lineages/archaea_odb12/hmms/8479at2157.hmm /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/04_busco_assessment/busco_results/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/04_busco_assessment
+# Date:            Thu Jan  1 15:36:32 2026
+# [ok]

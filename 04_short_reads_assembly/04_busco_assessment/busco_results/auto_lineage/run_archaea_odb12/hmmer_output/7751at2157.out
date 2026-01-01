@@ -1,0 +1,15 @@
+#                                                                                                         --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                     accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                             ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+NODE_11_length_153230_cov_39.213473:84416-84706|- -             97 7751                 -             79   3.6e-14   51.1   4.1   1   2   1.2e-16   5.5e-13   47.3   1.2     1    52     3    55     3    67 0.92 NODE_11_length_153230_cov_39.213473_79 # 84416 # 84706 # -1 # ID=11_79;partial=00;start_type=ATG;rbs_motif=TAAAAA;rbs_spacer=13bp;gc_cont=0.347
+NODE_11_length_153230_cov_39.213473:84416-84706|- -             97 7751                 -             79   3.6e-14   51.1   4.1   2   2    0.0019       8.9    5.0   0.1    53    67    74    88    65    91 0.84 NODE_11_length_153230_cov_39.213473_79 # 84416 # 84706 # -1 # ID=11_79;partial=00;start_type=ATG;rbs_motif=TAAAAA;rbs_spacer=13bp;gc_cont=0.347
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/04_busco_assessment/busco_downloads/lineages/archaea_odb12/hmms/7751at2157.hmm
+# Target file:     /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/04_busco_assessment/busco_results/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/04_busco_assessment/busco_results/auto_lineage/run_archaea_odb12/hmmer_output/7751at2157.out --cpu 1 /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/04_busco_assessment/busco_downloads/lineages/archaea_odb12/hmms/7751at2157.hmm /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/04_busco_assessment/busco_results/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/04_busco_assessment
+# Date:            Thu Jan  1 15:36:32 2026
+# [ok]

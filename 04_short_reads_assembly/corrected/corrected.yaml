@@ -1,0 +1,9 @@
+- "left reads":
+  - "/home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/corrected/codanics_1.trimmed.fastq00.0_0.cor.fastq.gz"
+  "number": !!int "1"
+  "orientation": "fr"
+  "right reads":
+  - "/home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/corrected/codanics_2.trimmed.fastq00.0_0.cor.fastq.gz"
+  "single reads":
+  - "/home/kpchuang/Documents/03_whole_genome_assembly/01_raw_reads/short_reads_assembly/04_short_reads_assembly/corrected/codanics__unpaired00.0_0.cor.fastq.gz"
+  "type": "paired-end"
