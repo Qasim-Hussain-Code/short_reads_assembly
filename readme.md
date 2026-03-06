@@ -72,7 +72,7 @@ short_reads_assembly/
 ### Prerequisites
 - Conda/Miniconda
 - Linux operating system
-- ~20GB disk space for databases
+- ~20GB disk space for databases (at least)
 
 ### Setup Environments
 
